@@ -1,0 +1,817 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    
+}
+
+
+/* Начало шапки */
+
+.container {
+    width: 95%;
+    max-width: 1396px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(2, 91, 195, 0.91);
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 167px;
+    height: 132px;
+}
+
+.nav {
+    display: flex;
+}
+
+/* Изменение размера, шрифтов и.т.д */
+.nav-a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color.1s linear;
+
+}
+/* Изменение размера, шрифтов и.т.д */
+
+.nav-a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-a:hover {
+    color: #fce38a;
+}
+.nav-a:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav-a:hover:after {
+    opacity: 1;
+}
+
+
+/* Конец шапки */
+
+
+
+/* Начало титла */
+.header-title{
+    background-image: url(../img/header-title.jpg);
+    width: 100%;
+    height: 674px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    max-width: 1171px;
+    padding-top: 17%;
+    margin-bottom: 72px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.sublite {
+    margin-bottom: 52px;
+}
+
+.sublite-title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+
+.sublite-icon:not(:last-child) {
+    margin-right: 45px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*Конец блока титла*/
+
+
+
+
+/*Начало блока О нас*/
+
+.section_onas {
+    height: 568px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+.onas-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+
+}
+.onas-text {
+    width: 60%;
+}
+.onas-title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #000000;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.onas-sublite {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.onas-img>img {
+    border-radius: 50px;
+    transform: rotate(-15deg);
+    width: 391.11px;
+    height: 244px;
+}
+
+/*Конец блока О нас*/
+
+
+/*Начало блока услуги*/
+
+.section_uslugi {
+    height: 754px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+
+.uslugi-title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 80px;
+    margin-bottom: 59px;
+}
+
+
+.uslugi-info-on {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.uslugi-info-tw {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.uslugi-cart-on {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg%201.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.uslugi-cart-tw {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.uslugi-cart-th {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.uslugi-cart-ch {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg4.png);
+    background-position: center;
+    background-size: cover;
+}
+.uslugi-cart-fi {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg5.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.uslugi-cart-si {
+    width: 346px;
+    height: 173px;
+    border-radius: 17px;
+    background: linear-gradient(0.59deg, #000000 -3.51%, rgba(0, 0, 0, 0) 79.48%), url(../img/bg6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.uslugi-subltie {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-top: 98px;
+    margin-left: 30px;
+}
+
+
+/*Конец блока услуги*/
+
+
+
+/*Начало блока портфолио*/
+
+.section-portfolio {
+    background: #FFFFFF;
+    height: 1850px;
+}
+
+.portfilio-title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #000000;
+    padding-top: 45px;
+    text-transform: uppercase;
+    margin-bottom: 71px;
+}
+
+.portfolio-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 210px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+
+}
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-instent {
+    margin-right: 102px;
+    margin-bottom: 70px;
+}
+
+
+.port1 {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/port1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+}
+
+
+.port2 {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/port2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+}
+
+.portth {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/bg12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+}
+
+.portchetiri {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/bg52.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+}
+.portfive {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/bg92.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+
+}
+
+.portnine {
+    background: linear-gradient(0.13deg, #000000 -33.06%, rgba(0, 0, 0, 0) 99.88%), url(../img/bg32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 546px;
+    height: 479px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 44px rgba(10, 124, 255, 0.4);
+
+}
+
+
+/*Конец блока портфолио*/
+
+
+
+
+/*Начало блока контакт*/
+
+.section-contact {
+    background: rgba(2, 91, 195, 0.91);
+    height: 450px;
+}
+
+.contact-title {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 85px;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-card {
+    text-align: center;
+    width: 25%;
+}
+
+.contact-card>img {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 25px;
+}
+
+.title-contact {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+
+}
+
+.subtitle-contact {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+
+
+/*Конец блока контакт*/
+
+
+
+
+/* Настройки под мобильную версию */
+@media(max-width: 1451px) {
+    .container {   
+        max-width: 1100px;
+    }
+    .portfolio-instent {
+        width: 376.16px;
+        height: 330px;
+    }
+    .portfilio-title {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .portfolio-instent {
+        margin-right: 50px;
+    }
+    .section-portfolio {
+        height: 1400px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .container {   
+        max-width: 900px;
+    }
+    .portfolio-content {
+        flex-direction: column;
+    }
+    .section-portfolio {
+        height: 2600px;
+    }
+
+    .portfolio-instent {
+        margin-right: 0px;
+    } 
+    .logo {
+        width: 129px;
+        height: 102px;
+    }
+    .nav-a {
+        font-size: 17px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .header-title {
+        text-align: center;
+        height: 500px;
+    }
+
+    .onas-title {
+        font-size: 40px;
+    }
+    .onas-sublite {    
+        font-size: 15px;
+    }
+    .onas-img {
+        display: none;
+    }
+    .onas-text {
+        width: 100%;
+    }
+    .section_onas {
+        height: 470px;
+    }
+    .uslugi-title {
+        font-size: 40px;     
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 45px;
+    }
+    .uslugi-info-on {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .uslugi-cart-on, .uslugi-cart-tw , .uslugi-cart-th, .uslugi-cart-ch , .uslugi-cart-fi {
+        margin-bottom: 20px;
+    }
+    
+    .uslugi-info-tw {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .section_uslugi {
+        height: 1360px;
+    }
+    .contact-title {
+        margin-bottom: 35px;
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card {
+        margin-bottom: 30px;
+    }
+    .section-contact {
+        height: 1000px;
+    }
+
+}
+
+
+@media(max-width: 930px) {
+    .container {   
+        max-width: 750px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 30px;    
+        margin-bottom: 95px;
+    }
+    .sublite {
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width: 776px) {
+    .container {   
+        max-width: 600px;
+    }
+    .header-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .onas-content {
+        margin: 30px 0;
+    }
+
+    .contact-card>img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+    .title-contact {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .subtitle-contact {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .contact-title {
+        margin-bottom: 20px;
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    .section-contact {
+        height: 740px;
+    }
+}
+
+@media(max-width: 620px) {
+    .container {   
+        max-width: 500px;
+    }
+    .nav {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 100%;
+        display: flex;
+        background: rgba(2, 91, 195, 0.91);
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-active {
+        display: none;
+    }
+    .nav-a {
+        padding: 7px 15px;
+    }
+    .menu-button {
+        display: block;
+        position: absolute;
+        right: 55px;
+        top: 40px;
+        width: 30px;
+        cursor: pointer;
+        height: 2px;
+        background-color: white;
+        border: none;
+
+    }
+
+    .menu-button:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transition: transform 0.2s;
+        margin-top: -7px;
+    }
+
+     .menu-button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+         transition: transform 0.2s;
+        margin-top: 7px;
+    }
+
+    .menu-button-active {
+        height: 0;
+    }
+    .menu-button-active:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menu-button-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+    .title {
+
+        padding-top: 150px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    .header-content {
+        justify-content: space-between;
+    }
+    .header {
+        height: 70px;
+    }
+    .logo {
+        width: 79px;
+        height: 62px;
+        margin-bottom: 0px;
+    }
+    .onas-content {
+        margin: 1px 0;
+        text-align: center;
+    }
+    .onas-title {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .contact-card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .nav-a:not(:last-child) {
+        margin-right: 0px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .container {   
+        max-width: 400px;
+    }
+    .title {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .onas-sublite {
+        line-height: 18px;
+    }
+    .uslugi-title {
+        font-size: 30px;
+    }
+    .uslugi-cart-on, .uslugi-cart-ch,.uslugi-cart-th, .uslugi-cart-tw, .uslugi-cart-chm, .uslugi-cart-fi, .uslugi-cart-si {
+        width: 250px;
+        height: 125px;
+        margin-bottom: 40px;
+    }
+    .uslugi-subltie {
+        padding-top: 75px;
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .section_uslugi {
+        height: 1150px;
+    }
+    .menu-button {
+        right: 15px;
+    }
+
+    .portfolio-instent {
+        width: 233px;
+        height: 204px;
+    }
+    .portfolio-text {
+        padding-top: 150px;
+        font-size: 20px;
+    }
+    .section-portfolio {
+        height: 1800px;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .title {
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .sublite-title {
+        font-size: 13px;
+    }
+    .onas-sublite {
+        line-height: 14px;
+        font-size: 14px;
+    }
+}
